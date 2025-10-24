@@ -210,7 +210,7 @@ const App = () => {
                 start_lon: startMarker.lng,
                 end_lat: endMarker.lat,
                 end_lon: endMarker.lng,
-                vehicle_width: selectedVehicle.width*3
+                vehicle_width: selectedVehicle.width*2.2
             }).toString();
 
             const response = await fetch(`${API_BASE_URL}route?${params}`); // Corrected API_BASE_URL usage
